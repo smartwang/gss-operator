@@ -1,0 +1,31 @@
+# permissions for end users to edit gssscalers.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: gssscaler-editor-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: gss-operator
+    app.kubernetes.io/part-of: gss-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: gssscaler-editor-role
+rules:
+- apiGroups:
+  - dev.xingzheai.cn.dev.xingzheai.cn
+  resources:
+  - gssscalers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - dev.xingzheai.cn.dev.xingzheai.cn
+  resources:
+  - gssscalers/status
+  verbs:
+  - get

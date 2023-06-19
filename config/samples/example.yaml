@@ -1,0 +1,15 @@
+apiVersion: dev.xingzheai.cn.dev.xingzheai.cn/v1alpha1
+kind: GssScaler
+metadata:
+  labels:
+    app.kubernetes.io/name: gssscaler
+    app.kubernetes.io/instance: gssscaler-sample
+    app.kubernetes.io/part-of: gss-operator
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: gss-operator
+  name: gssscaler-sample
+spec:
+  name: vscode
+  namespace: sdplus-poc
+  pollingInterval: 60
+  stabilizationWindowSeconds: 60

@@ -1,0 +1,4 @@
+## Append samples of your project ##
+resources:
+- dev.xingzheai.cn_v1alpha1_gssscaler.yaml
+#+kubebuilder:scaffold:manifestskustomizesamples
