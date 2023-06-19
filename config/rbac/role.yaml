@@ -31,3 +31,43 @@ rules:
   - get
   - patch
   - update
+- apiGroups:
+  - game.kruise.io
+  resources:
+  - gameservers
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - game.kruise.io
+  resources:
+  - gameservers/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - game.kruise.io
+  resources:
+  - gameserversets
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - game.kruise.io
+  resources:
+  - gameserversets/status
+  verbs:
+  - get
+  - patch
+  - update
